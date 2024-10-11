@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>SnowTrail Adventures</title>
+	<style>
+	body {
+		font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input[type="text"], input[type="email"], select, input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .submit-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .submit-btn:hover {
+        background-color: #218838;
+    }
+	.date-options {
+        margin-bottom: 20px;
+      }
+
+    .date-options label {
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: 300; /* Hace que las letras sean más suaves */
+        font-size: 14px; /* Tamaño de la fuente más pequeño si lo prefieres */
+        color: #333; /* Color del texto más suave */
+    }
+	
+	</style>
+	
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	
+  </head>
+  
+<body>
+	<img src="ImagenFondo.jpg" alt="SnowTrail Adventures">
+	
+	<header>
+	<nav>
+		<a href="index.html">Inicio</a>
+		<a href="index4.html">Destinos</a>
+		<a href="index2.html">Alquiler Material</a>
+		<a href="index3.html">Apuntate</a>
+
+	</nav>
+	</header>
+
+	<main>
+	<article>
+	
+	<h2>Formulario de Reservación para Viaje de Esquí</h2>
+        <form action="form.phd" method="post">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+
+            <label for="pack">Pack de Material a Alquilar:</label>
+            <select id="pack" name="pack" required>
+                <option value="">Selecciona un pack</option>
+				<option value="Solo viaje">Solo Viaje</option>
+                <option value="esqui">Pack Esquí</option>
+                <option value="snowboard">Pack Snowboard</option>
+
+            </select>
+
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="destino">Destino:</label>
+            <select id="destino" name="destino" required>
+                <option value="">Selecciona un destino</option>
+                <option value="alpes">Sierra Nevada</option>
+                <option value="pirineos">Baqueira Beret</option>
+                <option value="andes">Formigal</option>
+                <option value="rockies">Astun</option>
+            </select>
+			
+			<label>Selecciona una fecha:</label>
+			<div class="date-options">
+				<label><input type="radio" name="fecha_viaje" value="01-03 noviembre" required> 01 al 03 de Noviembre</label>
+				<label><input type="radio" name="fecha_viaje" value="08-10 noviembre"> 08 al 10 de Noviembre</label>
+				<label><input type="radio" name="fecha_viaje" value="15-17 noviembre"> 15 al 17 de Noviembre</label>
+				<label><input type="radio" name="fecha_viaje" value="22-24 noviembre"> 22 al 24 de Noviembre</label>
+			</div>
+			
+			<label for="personas">Número de Personas:</label>
+            <select id="personas" name="personas" required>
+                <option value="">Selecciona el número de personas</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <input type="submit" class="submit-btn" value="Reservar">
+        </form>
+		
+	</article>
+	</main>
+
+
+
+	<footer>
+		<h3>Contacto</h3>
+		<p>Email: snowTrailAdventures@gmail.cm</p>
+		<p>Teléfono: 946084088 / 622687362</p>
+		<div class= "social-icons">
+			<a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+				<img src="iconoInstagram.png" alt="Instagram" class="social-icon">
+			</a>
+			<a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+				<img src="iconoTwitter.png" alt="Twitter" class="social-icon">
+			</a>
+			<a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+				<img src="iconoFacebook.png" alt="Facebook" class="social-icon">
+			</a>
+			<a href="https://web.whatsapp.com" target="_blank" aria-label="Whatsapp">
+				<img src="iconoWhatsapp.png" alt="Whatsapp" class="social-icon">
+			</a>
+		</div>
+	
+	<p style="margin-top: 20px; font-size: 14px; color: white;">
+		&copy; 2024 SnowTrail Adventures. Todos los derechos reservados.
+	</p>
+	
+	</footer>
+	
+</body>
+</html>
